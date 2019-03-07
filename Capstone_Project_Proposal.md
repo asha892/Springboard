@@ -8,7 +8,7 @@
    
 ## Potential Clients
 
-    Given that this is a common problem across the entire airline industry, any airline would benefit from this analysis. If the airline could more accurately predict the demand for the flights for the next few months, they could either reduce the number of planned flights which will in turn reduce the operating costs or they can work on running promotions to increase the seat utilization. Unlocking the insights from this data would be critical to maximize seat utilization for the airline. 
+   Given that this is a common problem across the entire airline industry, any airline would benefit from this analysis. If the airline could more accurately predict the demand for the flights for the next few months, they could either reduce the number of planned flights which will in turn reduce the operating costs or they can work on running promotions to increase the seat utilization. Unlocking the insights from this data would be critical to maximize seat utilization for the airline. 
     
 ## Data
 
@@ -18,3 +18,10 @@ Reference: http://www.aviationdb.com/Aviation/F4SDetailQuery.shtm
 
 ## Approach
 
+The goal would be to build a model that can predict the seat utilization for any given airline for a particular month of the year based on the number of planned flights for that month. From the number of planned flights, we can calculate the total number of seats. The first step of this project would be to gather all this data from the website in a spreadsheet by month. Then this data would be combined in a single csv where month would be a column, so we would have the data for every airline by month in the csv.
+
+In the data wrangling phase of the project, after importing the csv in R, we would be eliminating rows that do not have enough data. So if the number of flights or number of passengers are very low, that the utilization is close to 0, we can elminate those rows, or if it is a common trend for certain airlines, we can eliminate those airlines from the data set. 
+
+## Deliverables
+
+The deliverables for this project will include code, documentation and a presentation which describes the project and the benefits of the analysis.
