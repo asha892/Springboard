@@ -29,4 +29,6 @@
   #Creating has_cabin_number column which has 1 if there is a cabin number and 0 otherwise
   titanicDF <- titanicDF %>%
     mutate(has_cabin_number=case_when(!is.na(cabin)~"1",TRUE~"0"))
-  
+    
+#Writing file
+  write.csv(titanicDF, file = "titanic_clean.csv",row.names=FALSE)
