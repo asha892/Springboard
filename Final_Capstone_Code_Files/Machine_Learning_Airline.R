@@ -126,8 +126,8 @@ plot(lm_model2, which = c(1))
 # plotting predicted vs actual
 #
 par(mfrow=c(1,1)) 
-plot(predict(lm_model2),model_data$SEAT_UTILIZATION,
-     xlab="predicted",ylab="actual")
+plot(model_data$SEAT_UTILIZATION, predict(lm_model2),
+     xlab="actual",ylab="predicted")
 abline(a=0, b=1, col = "blue")
 
 #
@@ -135,6 +135,21 @@ abline(a=0, b=1, col = "blue")
 #
 gg_reshist(lm_model2, bins = NULL)
 
+model_data <-
+model_data %>%
+mutate(util_pred = predict(lm_model2))
 
+#
+# Comparing actual vs predicated average seat utilization over time
+#
+model_data %>%
+group_by(DATE) %>%
+summarize(avg_util = mean(SEAT_UTILIZATION, na.rm = TRUE),
+            avg_pred = mean(util_pred, na.rm = TRUE)) %>%
+ggplot(aes(x = as.Date(DATE, origin = '1970-01-01'),
+             y = avg_util)) +
+  labs(x = "Date", y= "Average Utilization") +
+  geom_line(col = "red") +
+  geom_line(aes(y = avg_pred), col = "blue")
 
 
