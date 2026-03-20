@@ -1,4 +1,4 @@
-#Step 0 - read file
+#Step 0 - read csv file
   titanicDF <- read.csv(file="titanic_original.csv", header=TRUE, sep=",")
 
 #Step 1 - Port of embarkation
