@@ -4,7 +4,7 @@
    
    In the airline industry where the profit margins are usually razor-thin, ensuring that there are no empty seats on every flight is very important. Flights where there are many empty seats hurt the airline's bottom line as the costs to operate the flight is pretty high. Predicting the percentage of empty seats of a flight is critical as the airlines could then act on the data to maximize profits. 
    
-   This can depend on a variety of factors like brand reputation, pricing of the different classes of seats (first, business, economy etc.) and month of the year as demand would be higher in certain months due to holidays or other factors. The goal of this project would be to focus on predicting the demand based on the month of the year.
+   This can depend on a variety of factors like brand reputation, pricing of the different classes of seats (first, business, economy etc.) and month of the year as demand would be higher in certain months due to holidays or other factors. The goal of this project would be to focus on predicting the demand based on the month of the year
    
 ## Potential Clients
 
