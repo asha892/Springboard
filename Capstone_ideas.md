@@ -9,7 +9,7 @@
 ## Predicting the commonly bought groups of items
   * Predicting the items bought together often by customers will help the stores organize the items better to increase sales.
   * Dataset: https://rdrr.io/cran/arules/man/Groceries.html
-  ** This dataset has transactions of the list of items from the shopping receipts of a grocery store.
+  ** This dataset has transactions of the list of items from the shopping receipts of a grocery store
 
 
 ## Predicting the growth of Facebook users
